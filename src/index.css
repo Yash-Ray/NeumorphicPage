@@ -1,0 +1,257 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #F1F0ED;
+}
+html::-webkit-scrollbar {
+    width: 15px;
+}
+html::-webkit-scrollbar-track {
+    border-radius: 20px;
+    box-shadow: -5px 5px 10px #ccc inset, 
+                5px 5px 5px #bdbcbc inset;
+}
+html::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    box-shadow: -5px 5px 5px #ccc inset, 
+                5px 5px 5px #eeebeb inset;
+    background: #e0e0e0;
+}
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 80px;
+    min-width: 560px;
+    /* border: 2px solid red; */
+    margin: 10px;
+    border-radius: 20px;
+    background: #e0e0e0;
+    box-shadow:  6px 6px 12px #afafaf,
+             -6px -6px 12px #ffffff;
+}
+.left {
+    padding: 5px;
+    margin: 10px;
+    border-radius: 20px;
+    font-size: 40px;
+    font-family: 'Syne Mono', monospace;
+    font-weight: 500;
+    background: #e0e0e0;
+    box-shadow:  6px 6px 12px #afafaf,
+             -6px -6px 12px #ffffff;
+    color: indigo;
+}
+span {
+    color: crimson;
+}
+.right {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    padding-right: 5px;
+}
+.btn-menu {
+    padding: 15px;
+    font-size: 22px;
+    background-color: transparent;
+    border: none;
+    font-family: 'Nunito Sans', sans-serif;
+    color: rgb(253, 24, 70);
+}
+/* onclick effect */
+.normal {
+    background: #e0e0e0;
+    box-shadow:  6px 6px 12px #afafaf,
+                -6px -6px 12px #ffffff;
+}
+.active {
+    background: #e0e0e0;
+    border-radius: 20px;
+    box-shadow: inset 9px 9px 18px #a4a4a4,
+            inset -9px -9px 18px #ffffff;
+    color: indigo;
+}
+/* ************** */
+.menu {
+    /* padding: 15px; */
+    margin: 0px 10px;
+    border-radius: 20px;
+}
+/* #0059A9 - Electric blue */
+
+.btn-menu:focus {
+    outline: none !important;
+}
+
+.main-content {
+    padding: 20px;
+}
+.search-box {
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+input[type="text"] {
+    height: 50px;
+    width: 500px;
+    min-width: 350px;
+    margin: 10px;
+    padding: 10px;
+    font-size: 17px;
+    border-radius: 15px;
+    border: none;
+    background: #eeecec;
+    box-shadow: inset 2px 2px 6px #9f9f9f,
+                inset -2px -2px 6px #ffffff;
+    font-family: 'Nunito Sans', sans-serif;
+    caret-color: crimson;
+    color: crimson;
+}
+::placeholder {
+    color: indigo;
+}
+input[type="text"]:focus {
+    outline: none !important;
+}
+.topmatter {
+    display: flex;
+    flex-direction: row;
+    min-width: 540px;
+}
+.table-state {
+    /* width: 60%; */
+}
+table {
+    width: 60vw;
+}
+td, th {
+    padding: 5px;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Nunito Sans', sans-serif;
+    border-radius: 5px;
+    background: #f0eeee5b;
+    box-shadow: 5px 5px 5px #e0e0e0;
+}
+th {
+    padding: 20px 5px;
+    color: rgb(253, 24, 70);
+}
+td {
+    color:indigo;
+}
+.maps {
+    margin: 0px 20px 20px 20px;
+    padding: 0px 20px 20px 20px;
+}
+.india-map, world-map {
+    margin: auto;
+    border-radius: 21px;
+    background: #e0e0e0;
+    box-shadow:  6px 6px 12px #c1c1c1,
+                -6px -6px 12px #ffffff;
+}
+.india-map {
+    width: fit-content;
+    margin: 20px 0px;
+}
+.world-map {
+    margin: auto;
+}
+.map-in, .map-wl {
+    height: 29vw;
+    width: 29vw;
+    min-width: 380px;
+    min-height: 380px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 7px 7px 7px #e0e0e0;
+}
+.world-map {
+    margin: 20px 0px;
+}
+
+/* About Us Section */
+
+.about-us {
+    margin: 5px;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    background: #e0e0e0;
+    box-shadow:  6px 6px 12px #afafaf,
+                -6px -6px 12px #ffffff;
+}
+.aboutus-head {
+    margin: 0px 0px 15px 0px;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Nunito Sans', sans-serif;
+    color: rgb(253, 24, 70);
+    font-weight: 400;
+}
+
+.aboutus-body {
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Nunito Sans', sans-serif;
+    color: indigo;
+}
+
+/* Media Queries */
+
+@media (max-width:1024px) {
+    .topmatter {
+        flex-direction: column;
+    }
+    .maps {
+        display: flex;
+        justify-content: center;
+    }
+    .india-map {
+        margin: auto;
+        margin: 20px 20px 0px 20px;
+    }
+    table {
+        width: 90vw;
+        margin: auto;
+    }
+    .map-in, .map-wl {
+        height: 40vw;
+        width: 40vw;
+    }
+}
+
+@media (max-width:768px) {
+    .maps {
+        flex-direction: column;
+        margin: auto;
+    }
+    .map-in, .map-wl {
+        height: 50vw;
+        width: 50vw;
+    }
+}
+
+@media (max-width:600px) {
+    .map-in, .map-wl {
+        height: 280px;
+        width: 280px;
+    }
+    .about-us {
+        width: 500px;
+        position: relative;
+        margin-left: 10%;
+        transform: translate(-6%, -2%);
+
+    }
+}
