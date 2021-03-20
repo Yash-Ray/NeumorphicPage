@@ -47,7 +47,7 @@ html::-webkit-scrollbar-thumb {
     color: indigo;
 }
 span {
-    color: crimson;
+    color: rgb(253, 24, 70);
 }
 .right {
     display: flex;
